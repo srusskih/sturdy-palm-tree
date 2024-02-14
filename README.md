@@ -2,22 +2,22 @@
 
 ## How to install
 
-#. create a virtual environment
+1. create a virtual environment
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 ```
-#. install the requirements
+2. install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-#. Run PostgreSQL
+3. Run PostgreSQL
 ```bash
 docker compose up -d --wait
 ```
 
-#. run the server
+4. run the server
 ```bash
 cd poi_uploader
 python manage.py migrate
